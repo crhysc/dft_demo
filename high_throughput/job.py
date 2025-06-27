@@ -81,7 +81,7 @@ for id in ids:
         job_line=job_line,
         jobname=name,
         directory=directory,
-        partition="rack1,rack2e",
+        queue="rack1,rack2e",
         submit_cmd=submit_cmd,
     )
     os.chdir(cwd_home)
