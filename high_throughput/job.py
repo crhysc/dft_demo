@@ -58,7 +58,8 @@ for id in ids:
 
     # Example job commands, need to change based on your cluster
     job_line = (
-        "source activate my_jarvis \n"
+        "module load vasp/6.4.0 \n"
+        + "source activate my_jarvis \n"
         + "python job_fact.py"
     )
     name = id
