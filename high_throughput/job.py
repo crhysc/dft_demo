@@ -18,10 +18,10 @@ from jarvis.tasks.queue_jobs import Queue
 import os
 vasp_cmd = "mpirun vasp_std"
 copy_files = ["/users/crc8/bin/vdw_kernel.bindat"]
-submit_cmd = ["qsub", "submit_job"]
+#submit_cmd = ["qsub", "submit_job"]
 
 # For slurm
-# submit_cmd = ["sbatch", "submit_job"]
+ submit_cmd = ["sbatch", "submit_job"]
 
 steps = [
     "ENCUT",
