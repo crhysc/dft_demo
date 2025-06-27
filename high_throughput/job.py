@@ -2,7 +2,7 @@ import os
 ids = []
 poscars = os.listdir('./POSCARs')
 for num, file in enumerate(poscars):
-    ids.append(file)ids = []
+    ids.append(f"./POSCARs/{file}")
 
 from jarvis.tasks.vasp.vasp import (
     JobFactory,
@@ -63,6 +63,7 @@ for id in ids:
     )
     name = id
     directory = os.getcwd()
+    """
     Queue.pbs(
         job_line=job_line,
         jobname=name,
@@ -83,4 +84,4 @@ for id in ids:
         submit_cmd=submit_cmd,
     )
     os.chdir(cwd_home)
-    """
+    
